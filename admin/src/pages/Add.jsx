@@ -41,7 +41,7 @@ const Add = () => {
     // Get token (assuming you stored it in localStorage after login)
     const token = localStorage.getItem("token");
 
-    const res = await fetch("http://localhost:4000/api/product/add", {
+    const res = await fetch("https://ecomm-backend-chi.vercel.app/api/product/add", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`, // ✅ send token properly
