@@ -11,7 +11,7 @@ const List = () => {
             return 
         }
 
-        const dataa = await fetch(`http://localhost:4000/api/product/delete`,{
+        const dataa = await fetch(`https://ecomm-backend-chi.vercel.app/api/product/delete`,{
             method:"DELETE",
             headers:{
                 "content-type":"application/json",
