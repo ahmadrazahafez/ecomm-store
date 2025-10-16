@@ -17,7 +17,7 @@ const Login = () => {
   const submitted = async (e) => {
     e.preventDefault()
     if (currentstate === "Signup") {
-      const res = await fetch("https://ecomm-backend-chi.vercel.app/api/user/register", {
+      const res = await fetch("https://ecomm-backend-blond.vercel.app/api/user/register", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({ name, email, password })
@@ -37,7 +37,7 @@ const Login = () => {
       }
     }
     if (currentstate === "Login") {
-      const res = await fetch("https://ecomm-backend-chi.vercel.app/api/user/login", {
+      const res = await fetch("https://ecomm-backend-blond.vercel.app/api/user/login", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ email, password })
