@@ -55,7 +55,7 @@ const Order = () => {
       }
 
       if (method === "cod") {
-        const res = await fetch("http://localhost:4000/api/order/place", {
+        const res = await fetch("https://ecomm-backend-chi.vercel.app/api/order/place", {
           method: "POST",
           headers: {
             "content-type": "application/json",
