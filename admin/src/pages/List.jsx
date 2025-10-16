@@ -27,7 +27,7 @@ const List = () => {
     }
 
     const getproduct = async()=>{
-        const res = await fetch("http://localhost:4000/api/product/get",{
+        const res = await fetch("https://ecomm-backend-chi.vercel.app/api/product/get",{
             method:"GET",
         })
         const data = await res.json()
