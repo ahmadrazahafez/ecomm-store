@@ -10,8 +10,8 @@ const Order = () => {
   const [orders, setorders] = useState([])
 
   const fetchallorder = async () => {
-    const res = await fetch("http://localhost:4000/api/order/list", {
-      method: "POST", // since your route is POST
+    const res = await fetch("https://ecomm-backend-chi.vercel.app/api/order/list", {
+      method: "POST", 
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${token}`
@@ -24,7 +24,7 @@ const Order = () => {
   }
 
   const changestatus = async(e,orderid)=>{
-    const res = await fetch("http://localhost:4000/api/order/status",{
+    const res = await fetch("https://ecomm-backend-chi.vercel.app/api/order/status",{
       method:"POST",
       headers: {
         "Content-Type": "application/json",
