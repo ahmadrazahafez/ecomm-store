@@ -5,7 +5,7 @@ const Login = () => {
     const [password, setpassword] = useState("")
     const submitted = async (e) => {
         e.preventDefault()
-        const res = await fetch("http://localhost:4000/api/user/admin", {
+        const res = await fetch("https://ecomm-backend-chi.vercel.app/api/user/admin", {
             method: "POST",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({ email, password })
