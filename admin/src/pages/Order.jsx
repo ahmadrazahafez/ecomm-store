@@ -1,9 +1,8 @@
 import React from 'react'
-import Title from '../../../frontend/src/Components/Title'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { Package } from "lucide-react";
-import { assets } from '../../../frontend/src/assets/assets'
+
 
 const Order = () => {
   const token = localStorage.getItem("token")
@@ -47,7 +46,7 @@ const Order = () => {
   return (
     <div className='sm:px-20 sm:py-20 px-3 py-5'>
       <div>
-        <Title text1={"All"} text2={"Orders"} />
+        <p className='text-4xl font-medium font-prata'>All Orders</p>
       </div>
       <div className=' w-300 '>
         {orders.map((order, i) => {
