@@ -37,7 +37,7 @@ const ShopContextprovider = (props) => {
         setcartitem(cartdata)
 
         if (token) {
-            const res = await fetch("http://localhost:4000/api/cart/add", {
+            const res = await fetch("https://ecomm-backend-chi.vercel.app/api/cart/add", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",
@@ -78,7 +78,7 @@ const ShopContextprovider = (props) => {
         tempdata[itemid][size] = quantity
         setcartitem(tempdata)
         if (token) {
-            const res = await fetch("http://localhost:4000/api/cart/remove", {
+            const res = await fetch("https://ecomm-backend-chi.vercel.app/api/cart/remove", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json",
@@ -120,7 +120,7 @@ const ShopContextprovider = (props) => {
 
     const getusercart = async () => {
         if (token) {
-            const res = await fetch("http://localhost:4000/api/cart/get", {
+            const res = await fetch("https://ecomm-backend-chi.vercel.app/api/cart/get", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/jaon",
@@ -138,7 +138,7 @@ const ShopContextprovider = (props) => {
 
     const getdata = async () => {
 
-        const res = await fetch("http://localhost:4000/api/product/get", {
+        const res = await fetch("https://ecomm-backend-chi.vercel.app/api/product/get", {
             method: "GET"
         })
         const dataaa = await res.json()
