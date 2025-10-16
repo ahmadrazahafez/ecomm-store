@@ -16,7 +16,7 @@ const Order = () => {
     if (!token) {
       null
     } else {
-      const res = await fetch("https://ecomm-backend-blond.vercel.app/api/order/userorder", {
+      const res = await fetch("https://ecomm-backend-chi.vercel.app/api/order/userorder", {
         method: "POST",
         headers: {
           "content-type": "application/json",
